@@ -1,3 +1,8 @@
 php_value upload_max_filesize 30M
 php_value post_max_size 30M
 php_value max_execution_time 180
+
+<FilesMatch "\.(htaccess|htpasswd|ini|phps|log|bak|py|pyc)$">
+ Order Allow,Deny
+ Deny from all
+</FilesMatch>
